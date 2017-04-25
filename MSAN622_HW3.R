@@ -1,6 +1,8 @@
 mydata <- read.csv("dataset_Facebook.csv", sep = ';')
 library(shiny)
 library(ggplot2)
+if (!require("plotly")) {install.packages("plotly")}
+if (!require("GGally")) {install.packages("GGally")}
 library(plotly)
 library(GGally)
 
